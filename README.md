@@ -7,6 +7,13 @@ docker run -v /global/path/to/zk-adventures:/home/sage/zk-adventures --name sage
 ```
 Check out URL of the logs to navigate to the sage notebook: `http://127.0.0.1:8888/?token=some-random-token`
 
+```
+On Ubuntu 22.04.4 LTS you may need to run
+
+```bash
+sudo docker run -v /global/path/to/zk-adventures:/home/sage/zk-adventures --name sage -p 8888:8888 sagemath/sagemath:latest sage-jupyter
+```
+
 If you already ran the above you can open it back with
 
 ```bash
